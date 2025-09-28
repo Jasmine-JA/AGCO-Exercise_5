@@ -13,17 +13,19 @@
 
 .main {
   text-align: center;
-  max-width: 600px;
+  max-width: 400px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   margin: 0 auto;
 }
 
 .logo {
   margin-bottom: 1.5rem;
-  text-align: center;
+  text-align: left;
+  max-width: 400px;
+  width: 100%;
 }
 
 .nextLogo {
@@ -32,6 +34,8 @@
 
 .content {
   margin-bottom: 2rem;
+  max-width: 400px;
+  width: 100%;
 }
 
 .list {
@@ -41,6 +45,7 @@
   margin: 0 0 2rem 0;
   padding-left: 1.2rem;
   font-family: ui-monospace, Menlo, Monaco, "Cascadia Code", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Code", "Droid Sans Mono", "Courier New", monospace;
+  width: 100%;
 }
 
 .list li {
@@ -58,8 +63,9 @@
 .buttons {
   display: flex;
   gap: 1rem;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .deployButton,
