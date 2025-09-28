@@ -1,0 +1,152 @@
+.container {
+  min-height: 100vh;
+  background: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: white;
+  position: relative;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.nextLogo {
+  filter: invert(1);
+}
+
+.content {
+  margin-bottom: 2rem;
+}
+
+.list {
+  list-style: decimal;
+  text-align: left;
+  max-width: 400px;
+  margin: 0 0 2rem 0;
+  padding-left: 1.2rem;
+  font-family: ui-monospace, Menlo, Monaco, "Cascadia Code", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Code", "Droid Sans Mono", "Courier New", monospace;
+}
+
+.list li {
+  margin-bottom: 0.5rem;
+  color: #e5e5e5;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.list li:first-child {
+  color: #ffffff;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.deployButton,
+.docsButton {
+  padding: 0.625rem 1.25rem;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 40px;
+  border: 1px solid;
+}
+
+.deployButton {
+  background: #ffffff;
+  color: #000000;
+  border-color: transparent;
+}
+
+.deployButton:hover {
+  background: #e5e5e5;
+}
+
+.vercelIcon {
+  filter: invert(1);
+}
+
+.deployButton:hover .vercelIcon {
+  filter: invert(0);
+}
+
+.docsButton {
+  background: transparent;
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.145);
+}
+
+.docsButton:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: transparent;
+}
+
+.footer {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+}
+
+.footerLink {
+  color: #a3a3a3;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.footerLink:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 640px) {
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .deployButton,
+  .docsButton {
+    width: 200px;
+  }
+  
+  .footer {
+    gap: 1rem;
+  }
+}
